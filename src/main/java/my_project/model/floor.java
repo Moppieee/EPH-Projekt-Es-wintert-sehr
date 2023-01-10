@@ -16,12 +16,13 @@ public class floor extends GraphicalObject {
     public floor(double x, double y){
         this.x = x;
         this.y = y;
+
     }
 
     @Override
     public void draw(DrawTool drawTool) {
         drawTool.setCurrentColor(Color.GREEN);
-        drawTool.drawFilledRectangle(x,y,10,10);
+        drawTool.drawFilledRectangle(x,y,100,100);
     }
 
     /**
