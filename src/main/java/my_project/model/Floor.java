@@ -6,14 +6,14 @@ import KAGO_framework.view.DrawTool;
 import java.awt.*;
 
 
-public class floor extends GraphicalObject {
+public class Floor extends GraphicalObject {
 
     /**
 
      * @param x Startposition x
      * @param y Startposition y
      */
-    public floor(double x, double y){
+    public Floor(double x, double y){
         this.x = x;
         this.y = y;
 
@@ -21,8 +21,10 @@ public class floor extends GraphicalObject {
 
     @Override
     public void draw(DrawTool drawTool) {
-        drawTool.setCurrentColor(Color.GREEN);
-        drawTool.drawFilledRectangle(x,y,100,100);
+        drawTool.setCurrentColor(Color.black);
+        drawTool.drawFilledRectangle(x,y-500,100000,1000000);
+        drawTool.setCurrentColor(Color.white);
+        drawTool.drawFilledRectangle(x,y,10000,100);
     }
 
     /**
