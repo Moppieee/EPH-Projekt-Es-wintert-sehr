@@ -14,8 +14,8 @@ public class Snow extends GraphicalObject {
      * @param y Startposition y
      */
     public Snow(double x, double y){
-        this.x = x;
-        this.y = y;
+        this.x = Math.random()*600;
+        this.y = Math.random()*-500 ;
     }
 
     @Override
@@ -31,7 +31,10 @@ public class Snow extends GraphicalObject {
      */
     @Override
     public void update(double dt){
-
+        y = y + 100*dt;
+        if (y > 650){
+            y = -50;
+        }
     }
 
 }

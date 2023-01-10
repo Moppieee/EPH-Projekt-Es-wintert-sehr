@@ -21,10 +21,10 @@ public class Floor extends GraphicalObject {
 
     @Override
     public void draw(DrawTool drawTool) {
-        drawTool.setCurrentColor(Color.black);
-        drawTool.drawFilledRectangle(x,y-500,100000,1000000);
-        drawTool.setCurrentColor(Color.white);
-        drawTool.drawFilledRectangle(x,y,10000,100);
+        drawTool.setCurrentColor(Color.black);        //hintergrundfarbe
+        drawTool.drawFilledRectangle(x,y-500,100000,1000000);  //hintergrund
+        drawTool.setCurrentColor(Color.white);         //bodenfarbe
+        drawTool.drawFilledRectangle(x,y,10000,100);         //boden -_-
     }
 
     /**
