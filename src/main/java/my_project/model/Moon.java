@@ -41,7 +41,10 @@ public class Moon extends GraphicalObject {
      */
     @Override
     public void update(double dt){
-
+        x = x + 25*dt;
+        if (x > 690){
+            x = -230;
+        }
     }
 
 }
