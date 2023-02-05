@@ -21,8 +21,10 @@ public class Skybox extends GraphicalObject {
 
     @Override
     public void draw(DrawTool drawTool) {
-        drawTool.drawImage(this.getMyImage(),0,0);
-        drawTool.drawFilledTriangle(x,y,x+135,y-200,x+230,y);
+        //drawTool.drawImage(this.getMyImage(),0,0);
+        drawTool.setCurrentColor(Color.gray);
+        drawTool.drawFilledTriangle(x,y,x+135,y-100,x+230,y);
+
 
     }
 

@@ -34,9 +34,19 @@ public class ProgramController {
         // Erstelle ein Objekt der Klasse Ball und lasse es zeichnen
         Ball ball1 = new Ball(150,150);
         Floor f1 = new Floor(0,500);
-        Skybox Sky1 = new Skybox(100,300);
-        viewController.draw(Sky1);
+        Skybox Sky1 = new Skybox(60,500);
+        Skybox Sky2 = new Skybox(300,500);
+        House H1 = new House(100,450);
+        House H2 = new House(180,450);
+        House H3 = new House(280,450);
+        Moon M1 = new Moon(30,80);
         viewController.draw(f1);
+        viewController.draw(Sky1);
+        viewController.draw(Sky2);
+        viewController.draw(H1);
+        viewController.draw(H2);
+        viewController.draw(H3);
+        viewController.draw(M1);
         for (int i = 0; i < 500; i++) {
             Snow s1 = new Snow(0,0);
             viewController.draw(s1);

@@ -21,7 +21,7 @@ public class Snow extends GraphicalObject {
     @Override
     public void draw(DrawTool drawTool) {
         drawTool.setCurrentColor(Color.white);
-        drawTool.drawFilledCircle(x,y,5);
+        drawTool.drawFilledCircle(x,y,1);
     }
 
     /**
