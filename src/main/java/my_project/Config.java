@@ -7,7 +7,7 @@ package my_project;
 public class Config {
 
     // Titel des Programms (steht oben in der Fenstertitelzeile)
-    public final static String WINDOW_TITLE = "es regnet zucker";
+    public final static String WINDOW_TITLE = "kaltes wasser was vom himmel fällt und zu flokken verhärtet";
 
     // Konfiguration des Standardfensters: Anzeige und Breite des Programmfensters (Width) und Höhe des Programmfensters (Height)
     public final static boolean SHOW_DEFAULT_WINDOW = true;
